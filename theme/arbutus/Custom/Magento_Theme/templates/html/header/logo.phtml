@@ -1,0 +1,17 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * @var \Magento\Theme\Block\Html\Header\Logo $block
+ */
+?>
+<?php $storeName = $block->getThemeName() ? $block->getThemeName() : $block->getLogoAlt();?>
+   
+<div class="logo">
+ <a href="<?= $block->getUrl() ?>" title="<?= /* @escapeNotVerified */ $storeName ?>" class="head-logo"><img class="img-responsive" src="<?= /* @escapeNotVerified */ $block->getLogoSrc() ?>"></a>
+ </div>
